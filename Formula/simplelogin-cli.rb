@@ -5,21 +5,21 @@
 class SimpleloginCli < Formula
   desc "SimpleLogin CLI — manage email aliases from the terminal"
   homepage "https://github.com/mexcool/simplelogin-cli"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mexcool/simplelogin-cli/releases/download/v0.1.1/simplelogin-cli_0.1.1_darwin_amd64.tar.gz"
-      sha256 "4b45d32626fdfc73a2839fcc0fcabd1a8b2760a9c857a8077f3feb19df139daa"
+      url "https://github.com/mexcool/simplelogin-cli/releases/download/v0.2.0/simplelogin-cli_0.2.0_darwin_amd64.tar.gz"
+      sha256 "ea8df61628a6da34fff252f8a06bdcad36e05a4c7d28320d49433c484b868167"
 
       define_method(:install) do
         bin.install "sl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mexcool/simplelogin-cli/releases/download/v0.1.1/simplelogin-cli_0.1.1_darwin_arm64.tar.gz"
-      sha256 "3b82be30573e57a9c0fd7860089ac9c65198d8fd481e1052e4618100b77debc9"
+      url "https://github.com/mexcool/simplelogin-cli/releases/download/v0.2.0/simplelogin-cli_0.2.0_darwin_arm64.tar.gz"
+      sha256 "6cf42ddf92b8e6fed60e248af45713f3a3ec1072aa05e13d50fda0bc0b964782"
 
       define_method(:install) do
         bin.install "sl"
@@ -29,15 +29,15 @@ class SimpleloginCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mexcool/simplelogin-cli/releases/download/v0.1.1/simplelogin-cli_0.1.1_linux_amd64.tar.gz"
-      sha256 "93b4cb0b236c0f7bb6cf2e8a40f3922f7c3063332726c1827aad1d5c1af7c6fa"
+      url "https://github.com/mexcool/simplelogin-cli/releases/download/v0.2.0/simplelogin-cli_0.2.0_linux_amd64.tar.gz"
+      sha256 "e48a651b824b8a16322c9b6676da68713c89d6340cce555f90f2d3eb5d2c0433"
       define_method(:install) do
         bin.install "sl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mexcool/simplelogin-cli/releases/download/v0.1.1/simplelogin-cli_0.1.1_linux_arm64.tar.gz"
-      sha256 "a3594d3b817b4f02d97ecbb5c74dee331e3db78f5c06f57717bbce0ea7c37f55"
+      url "https://github.com/mexcool/simplelogin-cli/releases/download/v0.2.0/simplelogin-cli_0.2.0_linux_arm64.tar.gz"
+      sha256 "5edb0b89ca82a76ea632b2a89afb9faa7fb1f5b9686917ee5a3ed1b3f098ed72"
       define_method(:install) do
         bin.install "sl"
       end
